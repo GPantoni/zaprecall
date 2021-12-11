@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.telaDeInicio {
+.home {
     width: 100%;
     height: 100%;
     
@@ -16,14 +16,14 @@ body {
     align-items: center;
 }
 
-.logoETitulo {
+.logo-and-title {
     margin-top: 10%;
     
     display: flex;
     flex-flow: column;
 }
 
-.logoETitulo h1 {
+.logo-and-title h1 {
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
@@ -33,7 +33,7 @@ body {
     color: #000000;
 }
 
-.deckButton {
+.deck-button {
     width: 345px;
     height: 72px;
 
@@ -43,14 +43,13 @@ body {
     flex-direction: row nowrap;
     justify-content: center;
     align-items: center;
-    /* padding: 24px 65px; */
 
     border: 3px solid #FFEF61;
     box-sizing: border-box;
     border-radius: 12px;
 }
 
-.deckButton h1 {
+.deck-button h1 {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -61,7 +60,27 @@ body {
     margin-right: 5px;
 }
 
-.deckButton ion-icon{
+.deck-button ion-icon{
     color: #FFEF61;
     font-size: 32px;
+}
+
+.top-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    margin: 26px 32px;
+}
+
+.top-bar span {
+    margin-left: 13px;
+    
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
 }
