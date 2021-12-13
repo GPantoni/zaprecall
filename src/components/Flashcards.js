@@ -1,11 +1,15 @@
-import smallLogo from '../assets/small-logo.png';
+import logoMini from '../assets/logo-mini.png';
 
-export default function Flashcards() {
+export default function Flashcards(props) {
     return (
         <div className="flashcards">
-            <div className="top-bar">
-                <img src={smallLogo} alt="" />
-                <span>ZapRecall</span>
+            <header className="logo-mini">
+                <img src={logoMini} alt="" />
+            </header>
+            <div className="flashcards-container">
+                <>
+                    {props.children}
+                </>
             </div>
         </div>
     )

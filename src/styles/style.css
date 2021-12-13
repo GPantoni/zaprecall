@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.root {
+    width: 100%;
+    height: 100vh;
+}
+
 .home {
     width: 100%;
     height: 100%;
@@ -12,32 +17,17 @@ body {
 
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-}
 
-.logo-and-title {
-    margin-top: 10%;
     
-    display: flex;
-    flex-flow: column;
-}
-
-.logo-and-title h1 {
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 45px;
-
-    color: #000000;
 }
 
 .deck-button {
     width: 345px;
     height: 72px;
 
-    margin-top: 10%;
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: row nowrap;
@@ -60,27 +50,32 @@ body {
     margin-right: 5px;
 }
 
-.deck-button ion-icon{
-    color: #FFEF61;
-    font-size: 32px;
+.flashcards {
+    width: 100%;
+    height: 100%;
 }
 
-.top-bar {
+.logo-mini {
+    margin: 26px 0 0 32px;
+    z-index: 1;
+}
+
+.flashcards-container {
+    width: 100%;
+    /* height: 100%; */
+
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-
-    margin: 26px 32px;
 }
 
-.top-bar span {
-    margin-left: 13px;
-    
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+.card {
+    width: 392px;
+    height: 575.75px;
 
-    color: #000000;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+
+    position: relative;
 }

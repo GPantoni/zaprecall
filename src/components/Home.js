@@ -1,16 +1,13 @@
 import logo from '../assets/logo.png';
+import DeckButton from './DeckButton';
 
-export default function Home() {
+export default function Home({ setChangeScreen, chooseDeck, decks }) {
     return (
         <div className="home">
-            <div className="logo-and-title">
+            <div className="logo">
                 <img src={logo} alt="logo ZapRecall" />
-                <h1>ZapRecall</h1>
             </div>
-            <div className="deck-button">
-                <h1>Praticar React</h1>
-                <ion-icon name="play-forward-sharp"></ion-icon>
-            </div>
+            <DeckButton setChangeScreen={setChangeScreen} chooseDeck={chooseDeck} decks={decks} />
         </div>
     )
 }
